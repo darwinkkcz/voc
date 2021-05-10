@@ -8,5 +8,13 @@
 	They were imprisoned and deprived of their basic rights.
 <div>reinforce</div>/enforce
 <script type="text/javascript">
-
+	var fn = function(e) { 
+		console.log(e.target)
+		console.log(e.target.textContent)
+	};
+	var divs = document.getElementsByTagName("div");
+	for(var i = 0; i < divs.length; i ++) {
+		var item = divs[i];
+		item.addEventListener('click',  fn)
+	}
 </script>
