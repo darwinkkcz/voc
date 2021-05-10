@@ -7,10 +7,13 @@
 <div>imprison</div>
 	They were imprisoned and deprived of their basic rights.
 <div>reinforce</div>/enforce
+
+
 <script type="text/javascript">
 	var fn = function(e) { 
 		console.log(e.target)
 		console.log(e.target.textContent)
+		location.href = "https://dictionary.cambridge.org/dictionary/english-chinese-simplified/" + e.target.textContent;
 	};
 	var divs = document.getElementsByTagName("div");
 	for(var i = 0; i < divs.length; i ++) {
